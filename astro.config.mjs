@@ -1,7 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
+import preact from "@astrojs/preact";
+
 // https://astro.build/config
 export default defineConfig({
-    site: "http://localhost:4321" // Change this to the hosted site address
+  // Change this to the hosted site address
+  site: "http://localhost:4321",
+
+  integrations: [preact()]
 });
